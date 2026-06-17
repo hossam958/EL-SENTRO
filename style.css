@@ -1,5 +1,8 @@
 body{
-    background-color: rgb(0, 0, 0);
+    background-attachment: fixed;
+    background:linear-gradient(to left, rgb(66, 3, 83), #000000);
+    min-height: 100vh;
+    margin: 0;
     overflow: hidden;
 }
 .sen{
@@ -24,11 +27,11 @@ body{
         top: 20px !important;
     }
     .acc{
-         right: 15px !important;
+         right: 110px !important;
          margin: 0 !important;
     }
     .next{
-        right: 110px !important;
+        right: 15px !important;
         margin: 0 !important;
     }
     .el, .mr, .web{
@@ -54,7 +57,8 @@ body{
         margin-top: 2px !important;
         letter-spacing: 1px !important;
     }
-    .face, .x, .ins{
+    .face, .in, .ins{
+        mix-blend-mode: screen !important;
         width: 28px !important;
         height: 28px !important;
         left: 15px !important;
@@ -62,7 +66,7 @@ body{
 }
 .acc{
     font-size: 16px;
-    color: #949495;
+    color: #ffffff;
     text-decoration: none;
     position: absolute;
     right: 200px;
@@ -74,7 +78,7 @@ body{
 }
 .next{
     font-size: 15px;
-    color:#949495;
+    color:#ffffff;
     text-decoration: none;
     position: absolute;
     right:25px;
@@ -94,36 +98,39 @@ body{
     right: 500px;
 }
 .mr{
-   color:#949495;
+   color:#ffffff;
    position: absolute;
    right: 615px;
    top:295px;
 }
 .web{
-   color:#949495;
+   color:#ffffff;
    position: absolute;
    right: 565px;
    top:312px;
 }
 .face{
-    width: 50px;
-    height: 50px;
+    width: 30px;
+    height: 30px;
     position: absolute;
-    bottom: 150px;
+    bottom: 120px;
     left: 10px;
 }
-.x{
-    width: 50px;
-    height: 50px;
+.in{
+    width: 30px;
+    height: 30px;
     position: absolute;
-    bottom: 50px;
-    left: 10px;
+    bottom: 60px;
+    left: 9px;
     cursor: pointer;
 }
 .ins{
-    width: 50px;
-    height: 50px;
+    width: 25px;
+    height: 25px;
     position: absolute;
-    bottom: 100px;
-    left: 10px;
+    bottom: 90px;
+    left: 11px;
+}
+.face, .ins, .in{
+mix-blend-mode: screen;
 }
