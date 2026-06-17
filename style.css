@@ -28,7 +28,7 @@ body{
         top: 20px !important;
     }
     .acc{
-         right: 110px !important;
+         right: 123px !important;
          margin: 0 !important;
     }
     .next{
@@ -260,4 +260,15 @@ mix-blend-mode: screen;
     position: absolute;
     left: 4px;
     bottom: 1px;
+}
+@media(max-width:480px){
+    .box{
+        position: static !important;
+        display: block !important;
+        position:absolute !important;
+        left:10px;
+        margin-left: 0 !important;
+        margin-right: 0 !important;
+        font-size:20px;
+    }
 }
