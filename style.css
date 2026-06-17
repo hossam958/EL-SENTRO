@@ -1,6 +1,7 @@
+/*الصفحه الاوله hi.html*/
 body{
     background-attachment: fixed;
-    background:radial-gradient(circle, rgb(66, 3, 83), #000000);
+    background:linear-gradient(to top, #000000, #acaba6 90%);
     min-height: 100vh;
     margin: 0;
     overflow: hidden;
@@ -92,7 +93,7 @@ body{
     display: block;
     color: #ffffff;
     font-size: 100px;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    /*font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;*/
     font-weight: 700;
     position: absolute;
     right: 500px;
@@ -133,4 +134,130 @@ body{
 }
 .face, .ins, .in{
 mix-blend-mode: screen;
+}
+/*الصفحه الثانيه hi.html*/
+.box{
+    display: flex;
+    flex-wrap:wrap;
+    position: absolute;
+    left:450px;
+    bottom: 222px;
+}
+.btn-first{
+    border: 10px;
+    border-radius:11px;
+    border-color:black;
+    font-style: oblique;
+   background-color:white;
+   width: 181px;
+   height: 285px;
+
+}
+.btn-first:hover{
+    font-size: large;
+    font-style: oblique;
+    scale: 1.123456789;
+}
+.norm{
+     color: #000000;
+     font-size: medium;
+    position: absolute;
+    left: 18px;
+    bottom:198px;
+}
+.talk{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: #938989;
+     position: absolute;
+     left: 18px;
+     bottom: 175px;
+}
+.kostet{
+    position: absolute;
+    left: 18px;
+    bottom: 138px;
+    font-family:sans-serif
+}
+.by{
+    font-size: x-small;
+    background-color: white;
+    border-color: black;
+    border-radius: 8px;
+    border-style: inset;
+    padding-left: 29px;
+    padding-right: 31px;
+    padding-bottom: 9px;
+    padding-top: 9px;
+    position: absolute;
+    bottom:118px;
+    left: 16px;
+    cursor:pointer;
+}
+.prof{
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    bottom: 242px;
+    left: 14px;
+}
+.unlock-one{
+    color: #000000;
+     font-size: small;
+    position: absolute;
+    left: 28px;
+    bottom: 73px;
+}
+.unlock-two{
+    color: #000000;
+     font-size: small;
+    position: absolute;
+    left: 28px;
+    bottom: 49px;
+}
+.unlock-thre{
+     color: #000000;
+     font-size: small;
+    position: absolute;
+    left: 25px;
+    bottom:25px;
+}
+.unlock-four{
+    color: #000000;
+     font-size: small;
+    position: absolute;
+    left: 27px;
+    bottom:0px;
+}
+.crct-one{
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    bottom: 87px;
+    left: 4px;
+}
+.crct-two{
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    bottom: 65px;
+    left: 4px;
+}
+.crct-thre{
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    bottom: 41px;
+    left: 4px;
+}
+.crct-four{
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    bottom: 15px;
+    left: 4px;
+}
+.acspt{
+    position: absolute;
+    left: 4px;
+    bottom: 1px;
 }
