@@ -1,294 +1,202 @@
-/*الصفحه الاوله hi.html*/
 body{
-    background-attachment: fixed;
-    background:linear-gradient(to top, #000000, #acaba6 90%);
+    background:linear-gradient(rgba(5, 10, 25, 0.85), rgba(0, 4, 12, 0.532)), url(redd-francisco-zgttjxkxdde-unsplash.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
     min-height: 100vh;
     margin: 0;
     overflow: hidden;
 }
-.sen{
-    font-size: 25px;
-    color: #ffffff;
-    margin:0px;
-    margin-left: 10px;
+.father-of-links{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    backdrop-filter: blur(10px);
+    border-radius: 11px;
+    border-color: transparent;
+    text-shadow: 1px 1px 8px #000000;
+    height: 50px;
 }
-.tro{
-    font-size: 25px;
-    color: #ffffff;
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+    padding: 30px 30px;
+    list-style: none;
+    font-family: 'Inter', sans-serif;
+}
+.log-in{
+    margin-right: 15px;
+    margin-top: 35px;
+    border-radius: 5px;
+    padding-left: 14px;
+    padding-right: 14px;
+    font-size: 14px;
+    font-weight: 600;
+    border-radius: 50px;
+    padding-bottom: 7px;
+    padding-top: 7px;
+    padding-left: 16px;
+    padding-right: 21px;
     margin-bottom: 30px;
-    margin-top: 0px;
-    margin-left: 10px;
-}
-@media(max-width:480px){
-    .acc, .next{
-        text-decoration: none !important;
-        position: absolute !important;
-        display: inline-block !important;
-        font-size: 13px !important;
-        top: 20px !important;
-    }
-    .acc{
-         right: 123px !important;
-         margin: 0 !important;
-    }
-    .next{
-        right: 15px !important;
-        margin: 0 !important;
-    }
-    .el, .mr, .web{
-        position: static !important;
-        display: block !important;
-        text-align: center !important;
-        margin-left: 0 !important;
-        margin-right: 0 !important;
-        width: 100% !important;
-    }
-    .el{
-        font-size: 42px !important;
-        margin-top: 140px !important;
-        font-weight: 800;
-    }
-    .mr{
-        font-size: 11px !important;
-        margin-top: 5px !important;
-        letter-spacing: 1px !important;
-    }
-    .web{
-        font-size: 10px !important;
-        margin-top: 2px !important;
-        letter-spacing: 1px !important;
-    }
-    .face, .in, .ins{
-        mix-blend-mode: screen !important;
-        width: 28px !important;
-        height: 28px !important;
-        left: 15px !important;
-    }
-}
-.acc{
-    font-size: 16px;
-    color: #ffffff;
-    text-decoration: none;
-    position: absolute;
-    right: 200px;
-    top: 0px;
-    cursor:grab;
-}
-.acc:hover{
-    color:blueviolet;
-}
-.next{
-    font-size: 15px;
-    color:#ffffff;
-    text-decoration: none;
-    position: absolute;
-    right:25px;
-    top:2.5px;
-    cursor:grab;
-}
-.next:hover{
-    color: blueviolet;
-}
-.el{
-    display: block;
-    color: #ffffff;
-    font-size: 100px;
-    /*font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;*/
-    font-weight: 700;
-    position: absolute;
-    right: 500px;
-}
-.mr{
-   color:#ffffff;
-   position: absolute;
-   right: 615px;
-   top:295px;
-}
-.web{
-   color:#ffffff;
-   position: absolute;
-   right: 565px;
-   top:312px;
-}
-.face{
-    width: 30px;
-    height: 30px;
-    position: absolute;
-    bottom: 120px;
-    left: 10px;
-}
-.in{
-    width: 30px;
-    height: 30px;
-    position: absolute;
-    bottom: 60px;
-    left: 9px;
+    border-style: none;
+    background-color: #7d7d7d;
+    transform: scale(1);
+    transition: all 0.6s ease, box-shadow 0.6s ease;
     cursor: pointer;
 }
-.ins{
-    width: 25px;
-    height: 25px;
-    position: absolute;
-    bottom: 90px;
-    left: 11px;
+.log-in:hover{
+    transform: scale(1.3);
+    box-shadow: 4px 14px 10px 0px rgb(57, 57, 57);
 }
-.face, .ins, .in{
-mix-blend-mode: screen;
+.home-p{
+    color: #248da2;
+    margin-right: 15px;
+    transform: scale(1);
+    transition: all 0.6s ease, text-shadow 0.6s ease;
+    cursor: pointer;
 }
-/*الصفحه الثانيه hi.html*/
-.box{
+.home-p:hover{
+   transform: scale(1.7);
+   color: #ffffff;
+   text-shadow: 1px 1px 8px #00aeff;
+}
+.home-l{
+    text-decoration: none;
+}
+.father-one{
     display: flex;
-    flex-wrap:wrap;
-    position: absolute;
-    left:450px;
-    bottom: 222px;
-    transition: transform 0.7s ease-in-out;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 80vh;
 }
-.box:hover{
-    transform: scale(1.2);
+.hero-section{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    text-align: center;
+    margin: 0;
 }
-@keyframes zoom{
-    0%{
-        transform: translateX(0) scale(1);
-    }
-    50%{
-        transform: translateX(200px) scale(1.5);
-    }
-    100%{
-        transform: translateX(0) scale(1);
-    }
+.name-project{
+    font-size: 100px;
+    letter-spacing: 6px;
+    margin: 0;
+    background:linear-gradient(to right, #78a0a2, #1a93a2, #005043);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: white;
+    text-shadow: 12px 40px 30px #000000;
 }
-.btn-first{
-    border: 10px;
-    border-radius:11px;
-    border-color:black;
-    font-style: oblique;
-   background-color:white;
-   width: 181px;
-   height: 285px;
-
-}
-.norm{
-     color: #000000;
-     font-size: medium;
-    position: absolute;
-    left: 18px;
-    bottom:198px;
-}
-.talk{
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    color: #938989;
-     position: absolute;
-     left: 18px;
-     bottom: 175px;
-}
-.kostet{
-    position: absolute;
-    left: 18px;
-    bottom: 138px;
-    font-family:sans-serif
-}
-.by{
-    font-size: x-small;
-    background-color: white;
-    border-color: black;
-    border-radius: 11px;
-    border-style: inset;
-    padding-left: 29px;
-    padding-right: 31px;
-    padding-bottom: 9px;
-    padding-top: 9px;
-    position: absolute;
-    bottom:118px;
-    left: 16px;
-    cursor:pointer;
-}
-.by:hover{
-    background-color: #000000;
+.slogan{
     color: #ffffff;
+    font-weight: 500;
+    margin-top: 0;
+    margin-bottom: 55px;
+    letter-spacing: 2px;
+    font-size: 14px;
+    opacity: 0.8;
 }
-.prof{
-    width: 30px;
-    height: 30px;
-    position: absolute;
-    bottom: 242px;
-    left: 14px;
+.log{
+    margin-left: 40px;
+    font-size: 18px;
+    font-weight: 600;
+    border-radius: 50px;
+    padding-bottom: 7px;
+    padding-top: 7px;
+    padding-left: 35px;
+    padding-right: 35px;
+    border-style: none;
+    background: linear-gradient(to right, #9a9d9d, #494c4d, #333333);
+    transform: scale(1);
+    transition: all 0.6s ease, box-shadow 0.6s ease;
+    cursor: pointer;
 }
-.unlock-one{
-    color: #000000;
-     font-size: small;
-    position: absolute;
-    left: 28px;
-    bottom: 73px;
+.log:hover{
+    transform: scale(1.3);
+    box-shadow: 4px 14px 10px 0px rgba(0, 162, 255, 0.15);
 }
-.unlock-two{
-    color: #000000;
-     font-size: small;
-    position: absolute;
-    left: 28px;
-    bottom: 49px;
+.btn-started{
+    font-size: 18px;
+    font-weight: 600;
+    border-radius: 50px;
+    padding-bottom: 7px;
+    padding-top: 7px;
+    padding-left: 16px;
+    padding-right: 21px;
+    margin-bottom: 30px;
+    border-style: none;
+    background:linear-gradient(to right, #78a0a2, #1a93a2, #005043);
+    transform: scale(1);
+    transition: all 0.6s ease, box-shadow 0.6s ease;
+    cursor: pointer;
 }
-.unlock-thre{
-     color: #000000;
-     font-size: small;
-    position: absolute;
-    left: 25px;
-    bottom:25px;
+.btn-started:hover{
+    transform: scale(1.3);
+    box-shadow: 4px 14px 10px 0px rgba(0, 162, 255, 0.15);
 }
-.unlock-four{
-    color: #000000;
-     font-size: small;
-    position: absolute;
-    left: 27px;
-    bottom:0px;
+.ss{
+    text-decoration: none;
 }
-.crct-one{
-    width: 20px;
-    height: 20px;
-    position: absolute;
-    bottom: 87px;
-    left: 4px;
+.description{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: white;
+    font-size: 20px;
+    text-align: center;
+    margin-top: 220px;
+    max-width: 400px;
+    padding-top: 10px;
+    text-shadow: 1px 12px 12px rgb(0, 0, 0);
 }
-.crct-two{
-    width: 20px;
-    height: 20px;
-    position: absolute;
-    bottom: 65px;
-    left: 4px;
+.father-of-desc{
+   display: flex;
+   justify-content: space-around;
+   gap: 28px;
+   color: white;
+   padding-top: 15px;
+   text-shadow: 1px 12px 12px rgb(0, 0, 0);
 }
-.crct-thre{
-    width: 20px;
-    height: 20px;
-    position: absolute;
-    bottom: 41px;
-    left: 4px;
+@media(max-width:786px){
+    html{
+    overflow-x: hidden;
+    overflow-y: hidden;
+    max-width: 100%;
 }
-.crct-four{
-    width: 20px;
-    height: 20px;
-    position: absolute;
-    bottom: 15px;
-    left: 4px;
-}
-.acspt{
-    position: absolute;
-    left: 4px;
-    bottom: 1px;
-}
-@media(max-width:480px){
-    .box{
-        position: relative !important;
-        left: 0 !important;
-        bottom: 0 !important;
-        display: flex !important;
-        justify-content: flex-start !important;
-        padding-left: 15px !important;
-        margin-top: 50px !important;
+    body{
+    background:linear-gradient(rgba(5, 10, 25, 0.85), rgba(0, 4, 12, 0.532)), url(redd-francisco-zgttjxkxdDE-unsplash.jpg);
+    background-position: center;
+    background-size:170% 100%;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    margin: 0;
+    overflow: hidden;
     }
-    .btn-first{
-        left: 0 !important;
-        margin: 0 !important;
-        transform: scale(0.6);
-        transform-origin: center left left;
+     .navbar{
+        font-size: 9.5px;
     }
+    .name-project{
+        font-size: 55px;
+        margin-top: 50px;
+    }
+    .ss{
+        text-decoration: none;
+        color: white;
+    }
+    .tog{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .log{
+        font-size: 21px;
+         padding-left: 43px;
+         padding-right: 43px;
+         align-items: center;
+         margin-right: 35px;
+    }
+    .description{
+        margin-top: 290px;
+    }
+
 }
