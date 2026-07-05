@@ -49,7 +49,7 @@ body{
     gap: 30px;
 }
 .sign-up{
-    background: linear-gradient(to right, #12151dfa 50% 46%, #ffffff0d), url(redd-francisco-zgttjxkxdde-unsplash.jpg);
+    background: linear-gradient(to right, #12151dfa 50% 46%, #ffffff0d), url(redd-francisco-zgtTjXKxdDE-unsplash.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -204,15 +204,15 @@ body{
     padding: 0;
     margin: 0;
     align-items: center;
+    transform: scale(0.8);
 }
 .sign-up{
-    background: linear-gradient(to right, #12151def 100% 46%, #ffffff5d), url(redd-francisco-zgttjxkxdDE-unsplash.jpg);
+    background: linear-gradient(to right, #12151def 100% 46%, #ffffff5d), url(redd-francisco-zgtTjXKxdDE-unsplash.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
     align-items: center;
     color: #ffff;
-    transform: scale(0.9);
     margin: 0;
     margin-top: 30%;
     height: 450px;
@@ -228,7 +228,7 @@ body{
 }
 .hero{
     margin: 13px;
-    margin-left: 12%;
+    margin-left: 40px;
     margin-top: 9%;
     font-size: 8px;
 }

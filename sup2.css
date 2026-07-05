@@ -48,7 +48,7 @@ body{
     gap: 30px;
 }
 .sign-up{
-    background: linear-gradient(to left, #12151dfa 50% 46%, #ffffff0d), url(redd-francisco-zgttjxkxdDE-unsplash.jpg);
+    background: linear-gradient(to left, #12151dfa 50% 46%, #ffffff0d), url(redd-francisco-zgtTjXKxdDE-unsplash.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -174,15 +174,15 @@ body{
     padding: 0;
     margin: 0;
     align-items: center;
+    transform: scale(0.8);
 }
 .sign-up{
-    background: linear-gradient(to right, #12151def 100% 46%, #ffffff5d), url(redd-francisco-zgttjxkxdDE-unsplash.jpg);
+    background: linear-gradient(to right, #12151def 100% 46%, #ffffff5d), url(redd-francisco-zgtTjXKxdDE-unsplash.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
     align-items: center;
     color: #ffff;
-    transform: scale(0.9);
     text-align: center;
     margin: 0;
     margin-top: 30%;
