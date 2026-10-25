@@ -1,0 +1,83 @@
+
+body {
+    background: url(hello.jpg) center no-repeat fixed;
+    background-size: cover;
+    margin: 0;
+    font-family: system-ui, sans-serif;
+}
+
+.navbar,
+.nav-links,
+.nav-logo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 10px;
+    margin-bottom: 0;
+    gap: 30px;
+    color: rgb(255, 255, 255);
+    list-style: none;
+
+}
+
+.nav-logo {
+    margin-top: 15px;
+    font-size: 20px;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.nav-links {
+    margin-right: 20px;
+    font-size: 17px;
+    text-decoration: none;
+}
+
+.nav-links li a {
+    text-decoration: none;
+    color: rgb(128, 126, 126);
+}
+
+.nav-links li.About a{
+    color: white;
+}
+
+.nav-links li:not(.About):hover a{
+    transform: scale(1.4);
+}
+.nav-links li {
+    text-decoration: none;
+    transition: all 0.5s ease;
+}
+
+.nav-links li:not(.About):hover {
+    transform: scale(1.4);
+}
+
+.cards{
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin:auto 15px;
+}
+
+.card{
+    flex:1;
+    min-width: 200px;
+    text-align: center;
+    padding: 20px;
+    border-radius: 12px;
+    color: rgb(170, 170, 170);
+    background: rgba(83, 83, 83, 0.603);
+}
+
+.avatar{
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+    margin:0 auto 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.603);
+}

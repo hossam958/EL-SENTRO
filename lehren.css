@@ -1,0 +1,119 @@
+body {
+    background: url(hello.jpg) center no-repeat fixed;
+    background-size: cover;
+    margin: 0;
+    font-family: system-ui, sans-serif;
+}
+
+.navbar,
+.nav-links,
+.nav-logo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 10px;
+    margin-bottom: 0;
+    gap: 30px;
+    color: rgb(255, 255, 255);
+    list-style: none;
+
+}
+
+.nav-logo {
+    margin-top: 15px;
+    font-size: 20px;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.nav-links {
+    margin-right: 20px;
+    font-size: 17px;
+    text-decoration: none;
+}
+
+.home{
+    color: rgb(253, 252, 252);
+    font-size: 20px;
+}
+
+.nav-links li.home a{
+    color: white;
+}
+
+.nav-links li a {
+    text-decoration: none;
+    color: rgb(128, 126, 126);
+}
+
+.nav-links li {
+    text-decoration: none;
+    transition: all 0.5s ease;
+}
+
+.nav-links li:not(.home):hover {
+    transform: scale(1.4);
+}
+
+.s {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    font-size: 20px;
+    height: 90vh;
+    padding-left: 3%;
+}
+
+.f {
+    margin: 0;
+    color: rgb(255, 255, 255);
+    font-size: 50px;
+}
+
+.v,
+.the-developers {
+    color: rgb(247, 243, 243);
+    font-weight: 100;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.the-developers-list {
+    color: rgb(247, 243, 243);
+    font-weight: 100;
+    margin-top: 5px;
+    margin-bottom: 0;
+    padding-left: 0;
+    list-style: none;
+}
+
+.s-small {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.button-2,
+.button-1 {
+    background: linear-gradient(to right, rgb(40, 72, 94), rgb(0, 0, 0));
+    color: rgb(230, 230, 230);
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    padding: 5px 10px;
+    font-size: 15px;
+    border: none;
+    cursor: pointer;
+    transition: all 0.7s ease;
+}
+
+.button-1 {
+    margin-right: 20px;
+}
+
+.button-2:hover,
+.button-1:hover {
+    background: linear-gradient(to right, rgb(0, 0, 0), rgb(40, 72, 94));
+    transform: scale(1.2);
+}
