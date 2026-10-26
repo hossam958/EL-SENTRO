@@ -1,8 +1,17 @@
+html {
+    background-color: #111;
+    overscroll-behavior: none;
+}
+
 body {
-    background: url(hello.jpg) center no-repeat fixed;
+    background:linear-gradient(to top,#0000005b), url(homme.jpg) center no-repeat fixed;
     background-size: cover;
     margin: 0;
     font-family: system-ui, sans-serif;
+}
+
+.navbar-container {
+    backdrop-filter: blur(10px);
 }
 
 .navbar,
@@ -16,7 +25,6 @@ body {
     gap: 30px;
     color: rgb(255, 255, 255);
     list-style: none;
-
 }
 
 .nav-logo {
@@ -116,4 +124,12 @@ body {
 .button-1:hover {
     background: linear-gradient(to right, rgb(0, 0, 0), rgb(40, 72, 94));
     transform: scale(1.2);
+}
+.button-2 a, .button-1 a {
+    text-decoration: none;
+    color: rgb(230, 230, 230);
+}
+.divider{
+    border: 1px solid rgba(78, 78, 78, 0.562);
+    margin: 20px 0;
 }

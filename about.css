@@ -1,9 +1,18 @@
+html {
+    background-color: #111;
+    overscroll-behavior: none;
+}
 
 body {
-    background: url(hello.jpg) center no-repeat fixed;
+    background: linear-gradient(to top, #0000005b), url(homme.jpg) center no-repeat fixed;
     background-size: cover;
+    min-height: 147vh;
     margin: 0;
     font-family: system-ui, sans-serif;
+}
+
+.navbar-container {
+    backdrop-filter: blur(10px);
 }
 
 .navbar,
@@ -17,7 +26,6 @@ body {
     gap: 30px;
     color: rgb(255, 255, 255);
     list-style: none;
-
 }
 
 .nav-logo {
@@ -38,13 +46,15 @@ body {
     color: rgb(128, 126, 126);
 }
 
-.nav-links li.About a{
+.nav-links li.About a {
     color: white;
+    cursor: default;
 }
 
-.nav-links li:not(.About):hover a{
+.nav-links li:not(.About):hover a {
     transform: scale(1.4);
 }
+
 .nav-links li {
     text-decoration: none;
     transition: all 0.5s ease;
@@ -54,15 +64,20 @@ body {
     transform: scale(1.4);
 }
 
-.cards{
+.d {
+    text-align: center;
+    color: rgb(128, 126, 126);
+}
+
+.cards {
     display: flex;
     gap: 20px;
     flex-wrap: wrap;
-    margin:auto 15px;
+    margin: auto 15px;
 }
 
-.card{
-    flex:1;
+.card {
+    flex: 1;
     min-width: 200px;
     text-align: center;
     padding: 20px;
@@ -71,13 +86,70 @@ body {
     background: rgba(83, 83, 83, 0.603);
 }
 
-.avatar{
+.avatar {
     width: 56px;
     height: 56px;
     border-radius: 50%;
-    margin:0 auto 10px;
+    margin: 0 auto 10px;
     display: flex;
     justify-content: center;
     align-items: center;
     background: rgba(0, 0, 0, 0.603);
+}
+
+.divider {
+    border: 1px solid rgba(78, 78, 78, 0.562);
+    margin: 20px 0;
+}
+
+.about-us{
+    color: rgb(255, 255, 255);
+    font-weight: 500;
+    margin-left: 20px;
+    margin-bottom: 5px;
+}
+
+.about-us-p{
+    color: rgb(133, 133, 133);
+    font-weight: 400;
+    max-width: 500px;
+    margin-left: 20px;
+    margin-top: 5px;
+     max-width: 40ch;
+}
+
+.us {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    max-width: 460px;
+    gap: 20px;
+    margin: 0 auto;
+    padding: 0 15px;
+    box-sizing: border-box;
+    background-color: #11111100;
+}
+
+.hard {
+    text-align: left;
+    color: rgb(250, 247, 247);
+    font-weight: 500;
+    margin-left: 10px;
+}
+
+.hard-p{
+     margin-left: 10px;
+}
+
+.card-all:not(.hard) {
+    background: rgb(27, 27, 27);
+    border-radius: 12px;
+    padding: 12px;
+    color: #919090f6;
+    border: 1px solid rgba(78, 78, 78, 0.562);
+}
+.card-all:last-child{
+    grid-column: 1 / -1;
+}
+@media (max-width: 500px) {
+    .us { grid-template-columns: 1fr; }
 }
